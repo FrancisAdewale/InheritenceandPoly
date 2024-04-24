@@ -1,9 +1,8 @@
 package vehicles;
 
 public class Engine {
-    public Object horsepower;
+    public int horsepower;
     boolean running;
-    int horsePower;
     String fuelType;
 
 
