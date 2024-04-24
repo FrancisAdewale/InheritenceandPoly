@@ -8,6 +8,7 @@ public class Cube extends Shape3D{
     }
 
     private Cube(Rectangle base) {
+        this.base = base;
     }
 
     @Override

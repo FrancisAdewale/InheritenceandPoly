@@ -35,9 +35,7 @@ public class Main {
         }
 
         for (Shape3D shape3d : shapes3d) {
-            if (shape3d instanceof Cube){
-                continue;
-            }
+
             System.out.println(shape3d.getClass().getSimpleName() + " with " +
                     shape3d.getBase().getClass().getSimpleName() + " base | Volume = " +
                     shape3d.calculateVolume());

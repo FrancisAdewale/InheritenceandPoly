@@ -6,6 +6,7 @@ public class Cylinder extends Shape3D{
 
     public Cylinder(Circle base, double height) {
         this.height = height;
+        this.base = base;
 
     }
 

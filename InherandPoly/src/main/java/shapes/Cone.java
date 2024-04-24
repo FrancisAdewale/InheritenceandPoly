@@ -5,6 +5,7 @@ public class Cone extends Shape3D{
 
     public Cone(Circle base, double height) {
         this.height = height;
+        this.base = base;
     }
 
     @Override
