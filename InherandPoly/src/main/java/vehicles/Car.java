@@ -5,6 +5,7 @@ public class Car extends Vehicle {
     public Car(String make, String model) {
         super(make, model);
         this.engine = new CarEngine();
+        speed = 0;
     }
 
     @Override
@@ -17,8 +18,9 @@ public class Car extends Vehicle {
             default -> throw new IllegalStateException("Unexpected value: " + this.engine.fuelType);
         };
         for (int i = 0 ; i < 10 ; i++) {
-            System.out.println(message + String.format("%.2f", ((int)engine.horsepower
+            System.out.println(message + String.format("%.2f", (engine.horsepower
                     * fuelMod) * Math.exp(Math.sqrt(i)) / 2));
+
         }
 
     }
